@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ovinos"
+    tools:context=".inicio">
+
+    <Button
+        android:id="@+id/ovinos"
+        android:layout_width="119dp"
+        android:layout_height="101dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/presence_online"
+        android:onClick="sgte"
+        android:text="OVINOS" />
+
+    <Button
+        android:id="@+id/control"
+        android:layout_width="121dp"
+        android:layout_height="98dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="146dp"
+        android:background="@android:drawable/presence_online"
+        android:onClick="sgte1"
+        android:text="Control" />
+</RelativeLayout>

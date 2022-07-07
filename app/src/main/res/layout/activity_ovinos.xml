@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ovinos"
+    tools:context=".ovinos">
+
+    <EditText
+        android:id="@+id/diio"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="26sp" />
+
+    <Spinner
+        android:id="@+id/sexo"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/raza"
+        android:layout_marginTop="75dp" />
+
+    <TextView
+        android:id="@+id/T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignTop="@+id/sexo"
+        android:text="Sexo:"
+        android:textSize="21sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/T"
+        android:layout_alignTop="@+id/raza"
+        android:text="Raza:"
+        android:textSize="21sp" />
+
+    <Spinner
+        android:id="@+id/raza"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/diio"
+        android:layout_marginTop="153dp" />
+
+    <TextView
+        android:id="@+id/asdasdsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/T"
+        android:layout_marginTop="211dp"
+        android:text="Edad:"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/edad"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/asdasdsa"
+        android:layout_alignStart="@+id/diio"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="26sp" />
+
+    <ImageButton
+        android:id="@+id/volver"
+        android:layout_width="76dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="sgte"
+        app:srcCompat="@drawable/botonvolver" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/diio"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:text="DIIO:"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="168dp"
+        android:layout_marginStart="31dp"
+        android:onClick="guardar"
+        android:text="Guardar" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/volver"
+        android:layout_alignTop="@+id/diio"
+        android:onClick="buscar"
+        android:text="BUSCAR" />
+
+    <Button
+        android:id="@+id/modificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/guardar"
+        android:layout_marginStart="126dp"
+        android:onClick="modificar"
+        android:text="Modificar" />
+
+    <Button
+        android:id="@+id/eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/guardar"
+        android:layout_marginEnd="51dp"
+        android:onClick="eliminar"
+        android:text="Eliminar" />
+
+</RelativeLayout>
